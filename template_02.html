@@ -4,6 +4,28 @@
 		<link rel="stylesheet" type="text/css" href="style1.css">
 		<title>w3schools: HTML5 tutorial</title>
 	</head>
+	<style type="text/css">
+		#l01 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
+		#l01li01 {
+			float: left;
+		}
+		#l01li01 a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		#l01li01 a:hover {
+			background-color: #111111;
+		}
+	</style>
 	<body>
 		<h2 style="text-align: center;">Images</h2>
 		<p>Show one picture if the browser window (viewport) is a minimum of 650 pixels, and another image if not, but larger than 465 pixels.</p>
@@ -51,5 +73,46 @@
 			</tr>
 		</table>
 		
+		<p style="text-align: center;"><strong>Unordered HTML List</strong></p>
+		<ul style="list-style-type: circle;">
+			<li>Coffe</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ul>
+		<!--disc	Sets the list item marker to a bullet (default)
+			circle	Sets the list item marker to a circle
+		square	Sets the list item marker to a square none	The list items will not be marked-->
+		<ol type="A">
+			<li>Coffe</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol>
+		<dl>
+			<dt>Coffe</dt>
+			<dd>- black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>- white cold drink</dd>
+		</dl>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea
+				<ul>
+					<li>Black tea</li>
+					<li>Green tea</li>
+				</ul>
+			</li>
+			<li>Milk</li>
+		</ul>
+		<ol start="50">
+			<li>Coffe</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol>
+		<ul id="l01">
+			<li id="l01li01"><a href="#home">Home</a></li>
+			<li id="l01li01"><a href="#news">News</a></li>
+			<li id="l01li01"><a href="#contact">Contact</a></li>
+			<li id="l01li01"><a href="#about">About</a></li>
+		</ul>
 	</body>
 </html>
