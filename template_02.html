@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<title>w3schools: HTML5 tutorial</title>
+	</head>
+	<body>
+		<h2 style="text-align: center;">Images</h2>
+		<p>Show one picture if the browser window (viewport) is a minimum of 650 pixels, and another image if not, but larger than 465 pixels.</p>
+		<picture>
+			<source media="(min-width: 650px)" srcset="emoji_smile_1.png">
+			<source media="(min-width: 465px)" srcset="smile.png">
+			<img src="emoji_flused_face.png" alt="Flowers" style="width: 104px; height: 104px">
+		</picture>
+		<h2 style="text-align: center;">Defining an HTML Table</h2>
+		<table id="t02" style="width: 100%">
+			<tr>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Jim</td>
+				<td>Smith</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Eve</td>
+				<td>Jackson</td>
+				<td>23</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>80</td>
+			</tr>
+		</table>
+		<p>Cell that spans two rows: To make a cell span more than one row, use the rowspan attribute.</p>
+		<table id="t01" style="width: 100%">
+			<caption>Table 1</caption>
+			<tr>
+				<th>Name:</th>
+				<td>Bill Gates</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Telephone:</th>
+				<td>55577854</td>
+			</tr>
+			<tr>
+				<td>555577855</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
