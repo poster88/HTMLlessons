@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML lessons</title>
+	</head>
+	<style>
+		.cities {
+				margin: 20px;
+				padding: 20px;
+				background-color: black;
+				color: white;
+			}
+		span.note {
+			font-size: 120%;
+			color: red;
+			}
+		.animals {
+			color: green;
+			font-size: 120%
+		}
+	</style>
+	<body>
+		<div class="cities">
+			<h1>London</h1>
+			<span>London is the capital of England.</span>
+		</div>
+		<div class="cities">
+			<h1>Paris</h1>
+			<span>Paris is the capital of France.</span>
+		</div>
+		<h2>My <span class="note">Important </span>Heading</h2>
+		<p>This is some <span class="note">important</span> text</p>
+		<h2>Using The class Attribute in JavaScript</h2>
+		<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+		<h2 class="animals">Cats</h2>
+		<p>This is a Cats class.</p>
+		<h2 class="animals">Dogs</h2>
+		<p>This is a Dogs class.</p>
+		<h2 class="animals">Kengory</h2>
+		<p>This is a Kengory class.</p>
+		<button onclick="hideAllTitles()">Hide All Titles</button>
+		<script>
+			function hideAllTitles() {
+				x = document.getElementsByClassName("animals")
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "none"
+				}
+			}
+		</script>
+	</body>
+</html>
