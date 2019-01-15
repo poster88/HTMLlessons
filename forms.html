@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML forms</title>
+	</head>
+	<body>
+		<h2>HTML forms</h2>
+		<form>
+			First name:<br>
+			<input type="text" name="firstname" value="Mickey">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname" value="Mouse">
+			<br><br>
+			<input type="submit" name="Submit">
+			<input type="reset" name="">
+		</form>
+		<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+		<select name="cars" size="4" multiple>
+			<option value="volvo">Volvo</option>
+			<option value="audi">Audi</option>
+			<option value="bmw" selected>BMW</option>
+			<option value="opel">Opel</option>
+		</select>
+		<form>
+			<h2>Textarea</h2>
+			<p>The textarea element defines a multi-line input field.</p>
+			<textarea style="width: 200xp; height: 100px">The cat was playing in the garden.</textarea><br>
+			<input type="submit" name="Submit">
+		</form>
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+		<form action="/action_page.php">
+			<input list="browsers" name="browser">
+			<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Opera">
+			<option value="Safari">
+			</datalist>
+			<input type="submit">
+		</form>
+		<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			0
+			<input type="range" id="a" name="a" value="50">
+			100+
+			<input type="number" id="b" name="b" value="50">
+			=
+			<output name="x" for"a b"></output>
+			<br><br>
+			<input type="submit">
+		</form>
+		<form>
+  			<input type="radio" name="gender" value="male" checked>Male<br>
+  			<input type="radio" name="gender" value="female">Female<br>
+			<input type="radio" name="gender" value="other"> Other
+		</form>
+		<form>
+  			<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  			<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+		</form>
+		<form>
+  			Enter a date before 1980-01-01:<br>
+  			<input type="date" name="bday" max="1979-12-31"><br>
+  			Enter a date after 2000-01-01:<br>
+  			<input type="date" name="bday" min="2000-01-02"><br>
+		</form>
+		<form>
+  			Select a file: <input type="file" name="myFile">
+		</form><br>
+		<form action="/action_page.php">
+  			Quantity (between 1 and 5):
+  			<input type="number" name="quantity" min="1" max="5">
+  			<input type="submit">
+		</form>
+	</body>
+</html>
